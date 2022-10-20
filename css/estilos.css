@@ -1,0 +1,33 @@
+body {
+    background-image: url(../Imagenes/background-image.jpg) ; 
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: burlywood;
+    font-size: 22px;
+    text-align: justify;
+    text-shadow: 0px 2px 10px black;
+    font-family: 'Germania One', cursive;
+}
+.letramostaza {
+    color: rgb(240, 227, 209);
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+.alineado {
+    text-align: center;
+}
+.titulo {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+.letramarron {
+    color: chocolate;
+}
+.size {
+    width: 50%;
+    height: auto;
+}
