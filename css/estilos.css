@@ -23,19 +23,22 @@ body {
 .titulo {
     font-size: 50px;
     text-align: center;
-    text-decoration: underline;
     font-family: 'Harry Potter', sans-serif;                                           
 }
 .letramarron {
     color: chocolate;
 }
 .size {
-    width: 50%;
+    width: 30%;
     height: auto;
 }
 header {
     background-color: rgba(255, 166, 0, 0.404);
     border: 5px brown dotted;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 nav {
     background-color: rgba(153, 205, 50, 0.541);
@@ -50,6 +53,10 @@ aside {
 }
 footer {
     background-color: rgba(255, 248, 220, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .iconowhatsapp {
     width: 60px;
@@ -62,4 +69,35 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 15px;
+}
+.logo {
+    width: 200px;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+}
+.redes {
+    width: 30%;
+    background-color: darkolivegreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagediv img {
+   max-width: 100%;
+}
+.imagediv {
+    max-width: 50px;
+    flex: 1 1 0;
+}
+.mapabarrio {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.informacionpersonal {
+    max-width: 20%;
+    background-color: darkolivegreen;
+    display: flex;
+    align-items: center;
 }
