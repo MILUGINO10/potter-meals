@@ -43,13 +43,20 @@ header {
 nav {
     background-color: rgba(153, 205, 50, 0.541);
 }
+nav:hover {
+    background-color: silver;
+}
 section {
     background-color: rgba(245, 245, 220, 0.486);
-    height: 100px;
-    overflow:auto;
+   /* height: 100px;*/
+    /*overflow:auto;*/
+    display: flex;
+    justify-content: flex-start;
     }
 aside {
     background-color: rgba(255, 235, 205, 0.356);
+    display: flex;
+    justify-content: flex-end;
 }
 footer {
     background-color: rgba(255, 248, 220, 0.5);
@@ -71,14 +78,14 @@ footer {
     right: 15px;
 }
 .logo {
-    width: 200px;
-    max-width: 20%;
+    width: auto;
+    height: 25vh;
     display: flex;
     align-items: center;
 }
 .redes {
     width: 30%;
-    background-color: darkolivegreen;
+    background-color: rgb(175, 192, 147);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -97,7 +104,43 @@ footer {
 }
 .informacionpersonal {
     max-width: 20%;
-    background-color: darkolivegreen;
+    background-color: rgb(175, 192, 147);
     display: flex;
     align-items: center;
+    font-family: "ron";
+    color: rgb(66, 65, 65);
 }
+.receta {
+    display: flex;
+    flex-wrap: wrap;
+}
+.receta section {
+    width: 50%;
+    min-width: 400px;
+}
+.divflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a:hover {
+    color: rgb(133, 102, 165);
+    
+}
+.caja {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(197, 197, 197);
+}
+.cajita {
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: "ron" ;
+    src: url(../font/DavidCLM-MediumItalic.otf) format("opentype");
+}
+.titulocontacto {
+    font-family: 'Quicksand', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
