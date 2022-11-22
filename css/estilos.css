@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 body {
     background-color: white;
     background-image: url(../Imagenes/background-image.jpg) ; 
@@ -29,7 +31,7 @@ body {
     color: chocolate;
 }
 .size {
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 header {
@@ -46,13 +48,6 @@ nav {
 nav:hover {
     background-color: silver;
 }
-section {
-    background-color: rgba(245, 245, 220, 0.486);
-   /* height: 100px;*/
-    /*overflow:auto;*/
-    display: flex;
-    justify-content: flex-start;
-    }
 aside {
     background-color: rgba(255, 235, 205, 0.356);
     display: flex;
@@ -115,8 +110,14 @@ footer {
     flex-wrap: wrap;
 }
 .receta section {
-    width: 50%;
-    min-width: 400px;
+    width: 100%;
+    /* min-width: 400px; */
+    background-color: rgba(245, 245, 220, 0.486);
+    /* height: 100px;*/
+     /*overflow:auto;*/
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
 }
 .divflex {
     display: flex;
@@ -125,6 +126,7 @@ footer {
 }
 a:hover {
     color: rgb(133, 102, 165);
+    text-decoration: none;
     
 }
 .caja {
@@ -135,6 +137,7 @@ a:hover {
 .cajita {
     width: 100%;
     height: 100%;
+
 }
 @font-face {
     font-family: "ron" ;
@@ -143,4 +146,55 @@ a:hover {
 .titulocontacto {
     font-family: 'Quicksand', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+iframe 
+{
+    max-width: 100%;
+}
+
+@media (max-width: 750px) {
+    .redes-header {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .divflex {
+        flex-direction: column;
+    }
+   footer {
+       flex-direction: column;
+   }
+   .informacionpersonal {
+       max-width: 90%;
+   }
+   .redes-footer {
+       width: auto;
+   }
+   audio {
+    max-width: 60%;
+   }
+   .mapabarrio {
+       display: none;
+   }
+}
+
+.logocel {
+    width: 75%;
+    height: 75%;
+}
+
+@media (min-width: 750px ) {
+    .logocel {
+        display: none;
+    }
+    .receta section {
+        flex-direction: row;
+    }
+    .receta section h2 {
+        min-width: 300px;
+        text-align: left;
+    }
+    
+
+}
