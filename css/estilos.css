@@ -31,7 +31,7 @@ body {
     color: chocolate;
 }
 .size {
-    width: 100%;
+    width: 40%;
     height: auto;
 }
 header {
@@ -176,6 +176,9 @@ iframe
    }
    .mapabarrio {
        display: none;
+   }
+   .size {
+       width: 100%;
    }
 }
 
