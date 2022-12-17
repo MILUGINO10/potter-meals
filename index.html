@@ -7,31 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Alguna vez pensaste cómo es la comida que sirven en el gran comedor de Hogwarts. No te dieron ganas de probarla o de hacerla. Llegó el momento de ponerte a cocinar. 
      De la cerveza de mantequilla al pastel del caldero y otras 150 recetas deliciosas para magos y no magos">
-    <meta name=" keywords" content=" harry potter, cerveza mantequilla, comedor hogwarts"> 
+    <meta name=" keywords" content=" harry potter, cerveza mantequilla, comedor hogwarts">
     <meta name="author" content=" Milagros, miludelgado10@gmail.com">
     <title> Potter Meals </title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
     <link rel="icon" href="./Imagenes/hogwarts.png">
-   <script> alert ("Bienvenido Muggle al sitio de las mejores recetas mágicas")</script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script> alert("Bienvenido Muggle al sitio de las mejores recetas mágicas")</script>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="./Imagenes/hipogriffo.png" alt="Potter">
-        <img class="logocel" src="./Imagenes/butterbear.jpg" alt="Cerveza">
 
-        <h1 class="letramostaza titulo"> Cerveza de Mantequilla </h1>
-
+        <h1 class="letramostaza titulo"> Cocina con Harry Potter</h1>
+        <!---
         <div class="redes redes-header">
 
             <div class="imagediv">
                <a href="https://wa.me/543425683611?text=Hola,%20bienvenido%20Muggle,%20en%20que%20puedo%20ayudarlo?"
                target="_blank"><img src="./Imagenes/newwhatsapp.png" alt="WhatsApp"></a>
-
             </div>
             <div class="imagediv">
                 <a href="https://www.facebook.com/Milu10delgado" target="_blank"><img src="./Imagenes/newfacebook.png" alt="Facebook"></a>
@@ -42,13 +41,58 @@
             <div class="imagediv">
                <a href="https://www.youtube.com/watch?v=slxPFAJN9UM&t=1335s" target="_blank"><img src="./Imagenes/newyoutube.png" alt="Youtube"></a> 
             </div>
-
+        -->
         </div>
 
     </header>
     <button class="nocturno btn btn-dark" onclick="oscuro()" type="button">Modo Nocturno</button>
     <br>
-    <nav>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html" target="_blank">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Comprar el libro Cocina con Harry Potter
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://articulo.mercadolibre.com.ar/MLA-1125645707-cocina-con-harry-potter-_JM?matt_tool=46319439&matt_word=&matt_source=google&matt_campaign_id=14600917913&matt_ad_group_id=127394558536&matt_match_type=&matt_network=g&matt_device=c&matt_creative=544876793743&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=441542656&matt_product_id=MLA1125645707&matt_product_partition_id=1433669517042&matt_target_id=aud-1659384947886:pla-1433669517042&gclid=CjwKCAiA7vWcBhBUEiwAXieItj7Hz7F-RzJaPAijrLnLIbLNiVhVC905-ztdf6Na0RdL3e2EpfkJIhoCpZIQAvD_BwE">Mercado
+                                    Libre</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.buscalibre.com.ar/libro-cocina-con-harry-potter-dinah-bucholz-duomo-ediciones/9788418128165/p/53072666?gclid=CjwKCAiA7vWcBhBUEiwAXieItqHMyEK4lCLjwSplqUyfck_coGq6ZSiVCk_cYKakQBejguMPQ0AMcBoCkOEQAvD_BwE">Buscalibre.com</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.libroide.com.ar/MLA-934844234-libro-cocina-con-harry-potter-bucholz-dinah-duomo-_JM?utm_source=google&utm_medium=cpc&utm_campaign=darwin_ss">libroide.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--
+    <nav>        
         <div class="divflex">
         <a href="index.html">Inicio</a>
         <a href="https://espanol.orlando-florida.net/walt-disney-world/disney-glosario/butterbeer/amp/"
@@ -58,151 +102,195 @@
         <a href="contacto.html"> ESCRIBINOS </a>
         </div>
     </nav>
-    <p>
-        Si has escuchado hablar de Harry Potter, probablemente sabrás de que bebida estamos hablando,
-        una sabrosa cerveza de mantequilla que te permitirá dar rienda suelta a algunas de tus mayores fantasías
-        cinematográficas.
-        Aunque se conozca la cerveza de mantequilla debido a Harry Potter, lo cierto es que esta tiene su origen en la
-        Inglaterra medieval, concretamente en la época de los Tudor.
-        La receta original era servida más caliente y de un gusto más aceptado para la mayoría.
-    </p>
+    -->
+    <div class="container">
+        <p>
+            The Unofficial Harry Potter Cookbook es un libro de cocina al que la gente puede recurrir para preparar
+            comidas y cocinas brillantes para disfrutar en casa. Hay más de 150 recetas especiales proporcionadas dentro
+            del libro, que sigue el tema de Harry Potter y tiene como objetivo brindarles a
+            los fanáticos de Harry Potter una guía fácil para hacer esos alimentos mágicos, como una taza de té,
+            pasteles de roca, jugo de calabaza, pasteles de caldero, etc.
+            ¡Todos estos platos pueden hacerte sentir como si estuvieras viviendo en Hogwarts!
+        </p>
+    </div>
     <br>
     <p class="alineado">
-        <img src="Imagenes/Cerveza_mantequilla_harry_potter.jpg" alt="butterbear" class="size">
+        <img src="./Imagenes/librococinahp.jpg" alt="butterbear" class="size">
     </p>
     <div class="receta">
-        <section>
-            <h2 class="subrayado alineado letramarron">Ingredientes</h2>
-            <ul>
-                <li> 100g de azúcar Morena </li>
-                <li> 30 g de Mantequilla </li>
-                <li> 5 clavos de olor </li>
-                <li> 4 yemas de huevo </li>
-                <li> 1 litro de Cream Soda para la versión sin alcohol </li>
-                <li> 1 litro de cerveza tostada para versión con alcohol </li>
-                <li> 1/2 cucharada de jengibre en polvo </li>
-                <li> 1/2 cucharada de nuez moscada rallada o en polvo </li>
-            </ul>
+        <section class="my-3 py-3">
+            <div class="container">
+                <h2 class="subrayado alineado letramarron">Qué Ricura!</h2>
+                <p> ¿Quieres preparar comidas de Harry Potter para disfrutar durante una fiesta? ¡Es por eso que traemos
+                    estas recetas a todos los fanáticos de Harry Potter! En el artículo publicado las personas pueden
+                    aprender a preparar más de 50 comidas diferentes de Harry Potter con tutoriales fáciles de entender.
+                    Puedes traer diferentes postres y bebidas a tu mesa para disfrutar con tus hijos juntos!</p>
+            </div>
         </section>
-        <section>
-            <h2 class="subrayado alineado letramarron"> Preparación paso a paso </h2>
-            <ol>
-                <li> Calentar la cerveza, reservando 200ml para poder coronar con espuma al final. Mientras la cerveza se
-                    calienta, batir las yemas y el azúcar hasta conseguir una consistencia cremosa.</li>
-                <li> Una vez que la cerveza esta suficientemente caliente, retirela del fuego y anade los huevos mezclados
-                    con el azúcar.</li>
-                <li> Revolver hasta que la mezcla se vuelva homogénea, volver a calentar durante 3 o 4 minutos con el fuego
-                    corona para no escalfar los huevos. Durante este tiempo, revolver constantemente la mezcla.</li>
-                <li> Añadir la Mantequilla y seguir revolviendo hasta que se haya fundido por completo y luego filtrar con
-                    un colador.</li>
-                <li> Espumar con batidor de leche la cerveza reservada en un comienzo. servir en un vaso a gusto y coronar
-                    con la espuma.</li>
-                <li> Ya puedes disfrutar de tu propia y deliciosa cerveza de mantequilla!</li>
-            </ol>
-        </section> 
     </div>
     <section>
         <div class="container filasrecetas">
             <div class="row gx-4">
-                <div class="col-md-6 col-lg mb-4">
-                    <div class="card h-100">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-right">
                         <img src="./Imagenes/pastelcalabaza.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title"> Pastel de Calabaza</h5>
-                          <p class="card-text">Las empanadas de calabaza son una delicia favorita de Harry Potter, que encontró por primera vez a bordo del Expreso de Hogwarts en su camino a la escuela por primera vez.</p>
-                          <a href="https://www.gourmet4life.com/spicy-pumpkin-pasty-4147209" target="_blank" class="btn btn-primary">Ir a la receta</a>
+                            <h5 class="card-title"> Pastel de Calabaza</h5>
+                            <p class="card-text">Las empanadas de calabaza son una delicia favorita de Harry Potter, que
+                                encontró por primera vez a bordo del Expreso de Hogwarts en su camino a la escuela por
+                                primera vez.</p>
+                            <a href="https://www.gourmet4life.com/spicy-pumpkin-pasty-4147209" target="_blank"
+                                class="btn btn-primary">Ir a la receta</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg mb-4">
-                    <div class="card h-100">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-right">
                         <img src="./Imagenes/ranachocolate.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Ranas de Chocolate</h5>
-                          <p class="card-text">Crear ranas de chocolate de Harry Potter es fácil y divertido. Esta es una de nuestras recetas favoritas. Perfecto para fiestas o cualquier ocasión festiva.</p>
-                          <a href="https://cinereplicas.eu/es/blogs/news/harry-potter-chocolate-frogs-step-by-step-recipe" target="_blank" class="btn btn-primary">Ir a la receta</a>
+                            <h5 class="card-title">Ranas de Chocolate</h5>
+                            <p class="card-text">Crear ranas de chocolate de Harry Potter es fácil y divertido. Esta es
+                                una de nuestras recetas favoritas. Perfecto para fiestas o cualquier ocasión festiva.
+                            </p>
+                            <a href="https://cinereplicas.eu/es/blogs/news/harry-potter-chocolate-frogs-step-by-step-recipe"
+                                target="_blank" class="btn btn-primary">Ir a la receta</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg mb-4">
-                    <div class="card h-100">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-left">
                         <img src="./Imagenes/pudinnavidad.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Pudin Navidad</h5>
-                          <p class="card-text">El pastel de Navidad es un tipo de pastel de frutas que se sirve en Gran Bretaña en Navidad.</p>
-                          <a href="https://esquinasdobladas.com/index.php/2015/12/17/christmas-pudding-harry-potter/" target="_blank" class="btn btn-primary">Ir a la receta</a>
+                            <h5 class="card-title">Pudin Navidad</h5>
+                            <p class="card-text">El pastel de Navidad es un tipo de pastel de frutas que se sirve en
+                                Gran Bretaña en Navidad.</p>
+                            <a href="https://esquinasdobladas.com/index.php/2015/12/17/christmas-pudding-harry-potter/"
+                                target="_blank" class="btn btn-primary">Ir a la receta</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg mb-4">
-                    <div class="card h-100">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-left">
                         <img src="./Imagenes/zumocalabaza.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Zumo de Calabaza</h5>
-                          <p class="card-text">El delicioso zumo es el más popular entre los estudiantes de Hogwarts, que lo beben en cualquier ocasión.
-                            Fabricado desde 1837 por London Pumpkins & Sons, su consumo está tan extendido como el zumo de naranja en el mundo muggle.</p>
-                          <a href="https://thegreenadventure.es/zumo-calabaza-harry-potter/" target="_blank" class="btn btn-primary">Ir a la receta</a>
+                            <h5 class="card-title">Zumo de Calabaza</h5>
+                            <p class="card-text">El delicioso zumo es el más popular entre los estudiantes de Hogwarts,
+                                que lo beben en cualquier ocasión.
+                                Fabricado desde 1837 por London Pumpkins & Sons, su consumo está tan extendido como el
+                                zumo de naranja en el mundo muggle.</p>
+                            <a href="https://thegreenadventure.es/zumo-calabaza-harry-potter/" target="_blank"
+                                class="btn btn-primary">Ir a la receta</a>
                         </div>
-                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-right">
+                        <img src="./Imagenes/Cerveza_mantequilla_harry_potter.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cerveza de Mantequilla</h5>
+                            <p class="card-text"> La cerveza de mantequilla se sirve fría en botellas y caliente en
+                                jarras espumeantes. En Hogsmeade, se vende en Las Tres Escobas y en Cabeza de Puerco.
+                            </p>
+                            <a href="https://www.thebeertimes.com/como-preparar-la-cerveza-de-mantequilla-de-harry-potter/"
+                                target="_blank" class="btn btn-primary">Ir a la receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-right">
+                        <img src="./Imagenes/empanadillas-de-cornualles.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Empanadillas de Cornualles</h5>
+                            <p class="card-text"> Empanada en forma de media luna de pasta espesa, tradicionalmente
+                                rellena de una mezcla de carne de ternera, nabo, cebolla y patata.</p>
+                            <a href="https://www.petitchef.es/recetas/aperitivo/empanadillas-de-cornualles-fid-1186611"
+                                target="_blank" class="btn btn-primary">Ir a la receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-left">
+                        <img src="./Imagenes/mermeladanaranja.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mermelada de naranja</h5>
+                            <p class="card-text">La naranja es una fruta que cuenta con un rico sabor y de él se
+                                desprenden una serie de vitaminas y minerales importantes y necesarios para el
+                                organismo.</p>
+                            <a href="https://www.publimetro.com.mx/mx/estilo-vida/2020/05/27/naranja-receta-beneficios.html"
+                                target="_blank" class="btn btn-primary">Ir a la receta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100" data-aos="fade-left">
+                        <img src="./Imagenes/jengibrecookies.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Galleta de Jengibre</h5>
+                            <p class="card-text"> La galleta de jengibre es un tipo de galleta vendida en el mundo
+                                mágico, viene de varias formas.</p>
+                            <a href="https://cinereplicas.com/es/blogs/news/ginger-harry-potter-cookies" target="_blank"
+                                class="btn btn-primary">Ir a la receta</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <br>
-    <iframe
-        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Ftime%2Fvideos%2F10153878029051491%2F&show_text=false&width=476&t=0"
-        width="600" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-        allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        allowFullScreen="true"></iframe>
-    <br>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.4733932325!2d-0.2416795713265825!3d51.528558243596315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondres%2C%20Reino%20Unido!5e0!3m2!1ses!2sar!4v1666128904419!5m2!1ses!2sar"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <a href="https://wa.me/543425683611?text=Hola,%20bienvenido%20Muggle,%20en%20que%20puedo%20ayudarlo?"
-            target="_blank">
-            <img class="iconowhatsapp" src="./Imagenes/whatsapp2.png" alt="iconowhatsapp">
-        </a>
-        <a href="https://www.facebook.com/Milu10delgado" target="_blank">
-            <img class="iconofacebook" src="./Imagenes/facebookretro.png" alt="iconofacebook">
-        </a>
+    <a href="https://wa.me/543425683611?text=Hola,%20bienvenido%20Muggle,%20en%20que%20puedo%20ayudarlo?"
+        target="_blank">
+        <img class="iconowhatsapp" src="./Imagenes/WhatsApp.png" alt="iconowhatsapp">
+    </a>
+    <a href="https://www.facebook.com/Milu10delgado" target="_blank">
+        <img class="iconofacebook" src="./Imagenes/facebook.png" alt="iconofacebook">
+    </a>
     <footer>
-
         <div class="mapabarrio">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.780948439868!2d-60.73284276885882!3d-31.667212221577334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a8fbe15439f3%3A0x7861e4b47d35b334!2sRodr%C3%ADguez%20Pe%C3%B1a%20316%2C%20S3000%20ENB%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1667139993095!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.3106844031468!2d-118.35825606843484!3d34.13839276847597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2be49258fcd69%3A0x907f5454583f35eb!2sThe%20Wizarding%20World%20Of%20Harry%20Potter!5e0!3m2!1ses!2sar!4v1671313836490!5m2!1ses!2sar"
+                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="redes redes-footer">
 
             <div class="imagediv">
-               <a href="https://wa.me/543425683611?text=Hola,%20bienvenido%20Muggle,%20en%20que%20puedo%20ayudarlo?"
-               target="_blank"><img src="./Imagenes/newwhatsapp.png" alt="WhatsApp"></a>
+                <a href="https://wa.me/543425683611?text=Hola,%20bienvenido%20Muggle,%20en%20que%20puedo%20ayudarlo?"
+                    target="_blank"><img src="./Imagenes/newwhatsapp.png" alt="WhatsApp"></a>
 
             </div>
             <div class="imagediv">
-                <a href="https://www.facebook.com/Milu10delgado" target="_blank"><img src="./Imagenes/newfacebook.png" alt="Facebook"></a>
+                <a href="https://www.facebook.com/Milu10delgado" target="_blank"><img src="./Imagenes/newfacebook.png"
+                        alt="Facebook"></a>
             </div>
             <div class="imagediv">
-               <a href="https://www.instagram.com/milu10delgado/" target="_blank" rel="noopener noreferrer"><img src="./Imagenes/newinstagram.png" alt="Instagram"></a> 
+                <a href="https://www.instagram.com/milu10delgado/" target="_blank" rel="noopener noreferrer"><img
+                        src="./Imagenes/newinstagram.png" alt="Instagram"></a>
             </div>
             <div class="imagediv">
-               <a href="https://www.youtube.com/watch?v=slxPFAJN9UM&t=1335s" target="_blank"><img src="./Imagenes/newyoutube.png" alt="Youtube"></a> 
+                <a href="https://www.youtube.com/watch?v=slxPFAJN9UM&t=1335s" target="_blank"><img
+                        src="./Imagenes/newyoutube.png" alt="Youtube"></a>
             </div>
-
         </div>
         <!---  
         <div class="informacionpersonal">
             <p> Copyright © 1999-2022 Delgado Maria de los Milagros S.A
                 Rodiguez peña 300, piso 2, barrio centenario, Santa Fe, CP: 3000</p>
         </div>
-        -->  
+        -->
         <button onclick="cartel()" type="button" class="btn btn-secondary">Copyright©</button>
     </footer>
-    <audio controls src="audio/Harry potter music.mp3"></audio>
+    <footer>
+        <div class="copyright text-center py-4">
+            <p> Meals of Harry Potter™ - 2022 Todos los derechos reservados. </p>
+        </div>
+
+    </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<script src="./js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/javascript.js"></script>
 </body>
 
 </html>
